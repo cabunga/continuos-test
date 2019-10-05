@@ -44,11 +44,6 @@ pipeline {
       }
     
     }
-    stage("Quality Gate ") {
-            steps {
-              //  waitForQualityGate abortPipeline: true
-            }
-        }
 
     stage('Deploy Dllo') {
 
