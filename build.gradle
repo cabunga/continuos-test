@@ -30,6 +30,8 @@ dependencies {
 sonarqube {
     properties {
         property 'sonar.projectName', 'testcontinuos'
+        property 'sonar.jacoco.reportPaths', 'build/jacoco/test.exec'
+        property 'sonar.coverage.jacoco.xmlReportPaths','build/reports/jacoco/test/jacocoTestReport.xml'
     }
 }
 jacocoTestReport {
