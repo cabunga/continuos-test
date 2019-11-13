@@ -31,6 +31,12 @@ steps:
     cliProjectKey: 'contexto'
     cliProjectName: 'contexto'
     cliSources: '.'
+    extraProperties: |
+      sonar.languages=java
+      sonar.sources=src/main/java
+      sonar.java.binaries=build/classes
+      sonar.java.source=1.8
+      sonar.sourceEncoding=UTF-8
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
