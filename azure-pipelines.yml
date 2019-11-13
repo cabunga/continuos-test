@@ -22,14 +22,15 @@ steps:
     SonarCloud: 'sonarcloud'
     organization: 'cabunga-github'
     scannerMode: 'Other'
-- task: Gradle@2
+- task: SonarCloudPrepare@1
   inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    sonarQubeRunAnalysis: false
+    SonarCloud: 'sonarcloud'
+    organization: 'cabunga-github'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'contexto'
+    cliProjectName: 'contexto'
+    cliSources: '.'
 
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
