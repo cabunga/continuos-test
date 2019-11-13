@@ -34,7 +34,7 @@ steps:
     extraProperties: |
       sonar.languages=java
       sonar.sources=src/main/java
-      sonar.java.binaries=build/classes
+      sonar.java.binaries=bin/main
       sonar.java.source=1.8
       sonar.sourceEncoding=UTF-8
 
