@@ -7,7 +7,7 @@ pipeline {
 
       steps {
           git 'https://github.com/cabunga/continuos-test.git'
-          echo '....Codigo descargado'
+          echo '....Codigo descargado develop'
       }
 
     }
